@@ -10,7 +10,7 @@ module.exports = {
    // Sets the host.
    // host: '0.0.0.0',
    // // Specifies the port.
-   port: 8000
+   port: process.env.PORT || 5000
    // watchOptions: {
    //   aggregateTimeout: 300,
    //   poll: 1000
