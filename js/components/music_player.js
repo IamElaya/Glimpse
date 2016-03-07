@@ -1,7 +1,7 @@
 var React = require('react');
 var SoundCloudAudio = require('soundcloud-audio');
 
-const key = 'fa2d3ee788a538551b4a812ccabaf9b9';
+const key = '5e5f7520f240de22368b07fb780044d1';
 
 var UtilsMixin = {
   prettyTime: function (value) {
