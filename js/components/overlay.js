@@ -65,7 +65,6 @@ var Overlay = {
             <div id="blank-space" className="hide-display"></div>
             {staticImage}{animatedImage}
           </div>
-          <h4><b>Presented by Kay Cheng, Kenny Wu, and Andy Yao. © 2016.</b></h4>
         </div>
       </div>
     )
