@@ -1,5 +1,5 @@
 {
-  "name": "lh_final_project",
+  "name": "Glimpse",
   "version": "1.0.0",
   "description": "Sinatra =============",
   "main": "index.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yaoyunchen/LH_Final_Project"
+    "url": "git+https://github.com/IamElaya/Glimpse"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/yaoyunchen/LH_Final_Project/issues"
+    "url": "https://github.com/IamElaya/Glimpse/issues"
   },
-  "homepage": "https://github.com/yaoyunchen/LH_Final_Project#readme",
+  "homepage": "https://github.com/IamElaya/Glimpse#readme",
   "dependencies": {
     "babel": "^6.5.2",
     "babel-core": "^6.5.2",
