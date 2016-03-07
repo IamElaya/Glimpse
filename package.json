@@ -25,6 +25,8 @@
     "babel-preset-react": "^6.5.0",
     "chosen-npm": "^1.4.2",
     "classnames": "^2.2.3",
+    "ejs": "^2.3.3",
+    "express": "^4.13.4",
     "flickrapi": "^0.4.1",
     "fs": "0.0.2",
     "jsonfile": "^2.2.3",
