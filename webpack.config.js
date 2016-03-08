@@ -1,31 +1,42 @@
-module.exports = {
-  entry: './js/main.js',
-  output: {
-    path: './',
-    filename: 'index.js'
-  },
-  devServer: {
-   // Lets the app reload on the fly.
-   inline: true,
-   // Sets the host.
-   host: '0.0.0.0',
-   // // Specifies the port.
-   port: (process.env.PORT || 8000),
-   watchOptions: {
-     aggregateTimeout: 300,
-     poll: 1000
-   }
-  },
-  module: {
-    loaders: [
-      {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        loader: 'babel',
-        query: {
-          presets: ['es2015', 'react']
-        }
-      }
-    ]
-  }
+if (process.env.NODE_ENV !== 'production') {
+  jsLoader.loader = 'babel'
+  plugins.unshift(new webpack.HotModuleReplacementPlugin())
+  entry = [
+    'webpack-dev-server/client?http://0.0.0.0:8000',
+    'webpack/hot/only-dev-server'
+  ].concat(entry)
 }
+
+  module.exports = {
+    entry: './js/main.js',
+    output: {
+      path: './',
+      filename: 'index.js'
+    },
+    devServer: {
+     // Lets the app reload on the fly.
+     inline: true,
+     // Sets the host.
+     host: '0.0.0.0',
+     // // Specifies the port.
+     port: (process.env.PORT || 8000),
+     watchOptions: {
+       aggregateTimeout: 300,
+       poll: 1000
+     }
+    },
+    module: {
+      
+        loaders: [
+          {
+            test: /\.js$/,
+            exclude: /node_modules/,
+            loader: 'babel',
+            query: {
+              presets: ['es2015', 'react']
+            }
+          }
+        ]
+      }
+    }
+  }
