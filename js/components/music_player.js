@@ -207,32 +207,37 @@ var MusicPlayer = React.createClass({
     return(
       <div>
         <div className={this.props.musicPlayerStatus}>
-          <button className="react-soundcloud-previous"
-            type="button"
-            onClick={this.previousTrack}
-          ></button>
-          <button className={btnClassName}
-            type="button"
-            onClick={this.playPauseAction}
-          ></button>
-          <button className="react-soundcloud-next"
-            type="button"
-            onClick={this.nextTrack}
-          ></button>
-          <span>
-            {this.state.title + " " + this.prettyTime(this.state.currentTime) + " - " + this.prettyTime(this.state.duration)}
-          </span>
-          <progress className="react-soundcloud-progress"
-            onClick={this.seekAction}
-            value={this.state.currentTime / this.state.duration || 0}
-          >
-            {this.state.currentTime / this.state.duration || 0}
-          </progress>
+
+
         </div>
       </div>
     ) 
   }
 });
+
+          // <button className="react-soundcloud-previous"
+          //   type="button"
+          //   onClick={this.previousTrack}
+          // ></button>
+          // <button className={btnClassName}
+          //   type="button"
+          //   onClick={this.playPauseAction}
+          // ></button>
+          // <button className="react-soundcloud-next"
+          //   type="button"
+          //   onClick={this.nextTrack}
+          // ></button>
+          
+          // <span>
+            // {this.state.title + " " + this.prettyTime(this.state.currentTime) + " - " + this.prettyTime(this.state.duration)}
+          // </span>
+
+          //           <progress className="react-soundcloud-progress"
+          //   onClick={this.seekAction}
+          //   value={this.state.currentTime / this.state.duration || 0}
+          // >
+          //   {this.state.currentTime / this.state.duration || 0}
+          // </progress>
 
 // var Track = React.createClass({
 //   displayName: 'Track',
